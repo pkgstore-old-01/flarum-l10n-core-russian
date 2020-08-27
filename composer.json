@@ -3,7 +3,7 @@
   "description": "Flarum Russian language pack.",
   "type": "flarum-extension",
   "license": "GPL-3.0-or-later",
-  "homepage": "https://gitlab.com/marketplace-flarum",
+  "homepage": "https://github.com/marketplace-flarum",
   "keywords": [
     "extension",
     "flarum",
@@ -33,8 +33,8 @@
     }
   ],
   "support": {
-    "issues": "https://gitlab.com/marketplace-flarum/flarum-l10n-core-russian/issues",
-    "source": "https://gitlab.com/marketplace-flarum/flarum-l10n-core-russian"
+    "issues": "https://github.com/marketplace-flarum/flarum-l10n-core-russian/issues",
+    "source": "https://github.com/marketplace-flarum/flarum-l10n-core-russian"
   },
   "require": {
     "flarum/core": "^0.1.0-beta.13"
