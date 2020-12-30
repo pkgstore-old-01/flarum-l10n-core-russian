@@ -72,6 +72,7 @@ validation:
   not_in: "Выбранное значение для :attribute некорректно."
   not_regex: "Формат поле :attribute некорректен."
   numeric: "Значение :attribute должно быть числом."
+  password: "The password is incorrect."
   present: "Поле :attribute должно присутствовать."
   regex: "Поле :attribute имеет некорректный формат."
   required: "Поле :attribute обязательно к заполнению."
