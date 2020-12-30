@@ -52,13 +52,13 @@ flarum-subscriptions:
 
     # These translations are used in emails sent when a post is made in a subscribed discussion
     new_post:
-      subject: "[New Post] {title}"
+      subject: "[Новое сообщение] {title}"
       body: |
-        Hey {recipient_display_name}!
+        Привет, {recipient_display_name}!
 
-        {poster_display_name} made a post in a discussion you're following: {title}.
+        {poster_display_name} опубликовал новое сообщение в дискуссии, на которую Вы подписаны: {title}.
 
-        To view the new activity, check out the following link:
+        Чтобы посмотреть новое сообщение, перейдите по следующей ссылке:
         {url}
 
         ---
@@ -67,7 +67,7 @@ flarum-subscriptions:
 
         ---
 
-        You won't receive any more notifications about this discussion until you're up-to-date.
+        Вы не будете получать уведомления об этой дискуссии, пока не ознакомитесь с текущей информацией.
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
