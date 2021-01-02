@@ -31,8 +31,8 @@ dayjs.locale({
     LTS: 'H:mm:ss',
     L: 'DD.MM.YYYY',
     LL: 'D MMMM YYYY',
-    LLL: 'D MMMM YYYY H:mm',
-    LLLL: 'dddd, D MMMM YYYY H:mm'
+    LLL: 'D MMMM YYYY, H:mm',
+    LLLL: 'dddd, D MMMM YYYY, H:mm'
   },
   relativeTime: {
     future: 'через %s',
