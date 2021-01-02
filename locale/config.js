@@ -50,4 +50,4 @@ dayjs.locale({
     yy: relativeTimeWithPlural
   },
   ordinal: n => n
-}, null, false);
+}, null, true);
