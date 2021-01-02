@@ -1,15 +1,8 @@
-const monthFormat = 'января_февраля_марта_апреля_мая_июня_июля_августа_сентября_октября_ноября_декабря'.split('_')
-const monthStandalone = 'январь_февраль_март_апрель_май_июнь_июль_август_сентябрь_октябрь_ноябрь_декабрь'.split('_')
-
-const monthShortFormat = 'янв._февр._мар._апр._мая_июня_июля_авг._сент._окт._нояб._дек.'.split('_')
-const monthShortStandalone = 'янв._февр._март_апр._май_июнь_июль_авг._сент._окт._нояб._дек.'.split('_')
-
-const MONTHS_IN_FORMAT = /D[oD]?(\[[^[\]]*\]|\s)+MMMM?/
-
 function plural(word, num) {
   const forms = word.split('_')
   return num % 10 === 1 && num % 100 !== 11 ? forms[0] : (num % 10 >= 2 && num % 10 <= 4 && (num % 100 < 10 || num % 100 >= 20) ? forms[1] : forms[2]) // eslint-disable-line
 }
+
 function relativeTimeWithPlural(number, withoutSuffix, key) {
   const format = {
     mm: withoutSuffix ? 'минута_минуты_минут' : 'минуту_минуты_минут',
@@ -24,39 +17,22 @@ function relativeTimeWithPlural(number, withoutSuffix, key) {
 
   return `${number} ${plural(format[key], +number)}`
 }
-const months = (dayjsInstance, format) => {
-  if (MONTHS_IN_FORMAT.test(format)) {
-    return monthFormat[dayjsInstance.month()]
-  }
-  return monthStandalone[dayjsInstance.month()]
-}
-months.s = monthStandalone
-months.f = monthFormat
 
-const monthsShort = (dayjsInstance, format) => {
-  if (MONTHS_IN_FORMAT.test(format)) {
-    return monthShortFormat[dayjsInstance.month()]
-  }
-  return monthShortStandalone[dayjsInstance.month()]
-}
-monthsShort.s = monthShortStandalone
-monthsShort.f = monthShortFormat
-
-const locale = {
+dayjs.locale({
   name: 'ru',
   weekdays: 'воскресенье_понедельник_вторник_среда_четверг_пятница_суббота'.split('_'),
   weekdaysShort: 'вск_пнд_втр_срд_чтв_птн_сбт'.split('_'),
   weekdaysMin: 'вс_пн_вт_ср_чт_пт_сб'.split('_'),
-  months,
-  monthsShort,
+  months: 'Январь_Февраль_Март_Апрель_Май_Июнь_Июль_Август_Сентябрь_Октябрь_Ноябрь_Декабрь'.split('_'),
+  monthsShort: 'Янв_Фев_Мар_Апр_Май_Июн_Июл_Авг_Сен_Окт_Ноя_Дек'.split('_'),
   weekStart: 1,
   formats: {
     LT: 'H:mm',
     LTS: 'H:mm:ss',
     L: 'DD.MM.YYYY',
-    LL: 'D MMMM YYYY г.',
-    LLL: 'D MMMM YYYY г., H:mm',
-    LLLL: 'dddd, D MMMM YYYY г., H:mm'
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY H:mm',
+    LLLL: 'dddd, D MMMM YYYY H:mm'
   },
   relativeTime: {
     future: 'через %s',
@@ -74,6 +50,4 @@ const locale = {
     yy: relativeTimeWithPlural
   },
   ordinal: n => n
-}
-
-dayjs.locale(locale, null, true)
+}, null, false);
