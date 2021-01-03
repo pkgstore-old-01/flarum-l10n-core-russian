@@ -24,7 +24,7 @@ flarum-tags:
       name_placeholder: => flarum-tags.ref.name
       slug_label: "Путь"
       submit_button: => core.ref.save_changes
-      title: Create Tag
+      title: "Создать раздел"
 
     # These translations are used in the navigation bar.
     nav:
@@ -49,8 +49,8 @@ flarum-tags:
     # These translations are used in the Tags page.
     tags:
       about_tags_text: "Разделы используются для структурирования дискуссий. Основные разделы подобны традиционным категориям форумов и представляют собой двухуровневую иерархию. Дополнительные разделы не имеют иерархии и могут быть полезны для структурирования дискуссий на микро-уровне."
-      create_primary_tag_button: "Создать основной раздел"
-      create_secondary_tag_button: "Создать дополнительный раздел"
+      create_primary_tag_button: "Создать основной"
+      create_secondary_tag_button: "Создать дополнительный"
       primary_heading: "Основные"
       secondary_heading: "Дополнительные"
       settings_heading: "Настройки"
