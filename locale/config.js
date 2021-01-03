@@ -49,5 +49,5 @@ dayjs.locale({
     y: 'год',
     yy: relativeTimeWithPlural
   },
-  ordinal: n => n
-}, null, true);
+  ordinal: n => `${n}.`
+});
