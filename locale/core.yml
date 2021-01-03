@@ -46,7 +46,7 @@ core:
       saved_message: "Изменения сохранены."
       show_language_selector_label: "Отображать переключатель языка"
       slug_driver_heading: "Драйвер путей: {model}"
-      slug_driver_text: "Выберите драйвер, который будет использоваться для создания семантических путей (URL)."
+      slug_driver_text: "Выберите драйвер, который будет использоваться при создании семантических путей (URL) для этой модели."
       submit_button: => core.ref.save_changes
       title: "Основные"
       welcome_banner_heading: "Баннер приветствия"
