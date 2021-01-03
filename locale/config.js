@@ -1,10 +1,17 @@
 // Russian [ru]
 
+const monthFormat = 'Января_Февраля_Марта_Апреля_Мая_Июня_Июля_Августа_Сентября_Октября_Ноября_Декабря'.split('_')
+const monthStandalone = 'Январь_Февраль_Март_Апрель_Май_Июнь_Июль_Август_Сентябрь_Октябрь_Ноябрь_Декабрь'.split('_')
+
+const monthShortFormat = 'Янв_Фев_Мар_Апр_Май_Июн_Июл_Авг_Сен_Окт_Ноя_Дек'.split('_')
+const monthShortStandalone = 'Янв_Фев_Мар_Апр_Май_Июн_Июл_Авг_Сен_Окт_Ноя_Дек'.split('_')
+
+const MONTHS_IN_FORMAT = /D[oD]?(\[[^[\]]*\]|\s)+MMMM?/
+
 function plural(word, num) {
   const forms = word.split('_')
   return num % 10 === 1 && num % 100 !== 11 ? forms[0] : (num % 10 >= 2 && num % 10 <= 4 && (num % 100 < 10 || num % 100 >= 20) ? forms[1] : forms[2]) // eslint-disable-line
 }
-
 function relativeTimeWithPlural(number, withoutSuffix, key) {
   const format = {
     mm: withoutSuffix ? 'минута_минуты_минут' : 'минуту_минуты_минут',
@@ -19,14 +26,31 @@ function relativeTimeWithPlural(number, withoutSuffix, key) {
 
   return `${number} ${plural(format[key], +number)}`
 }
+const months = (dayjsInstance, format) => {
+  if (MONTHS_IN_FORMAT.test(format)) {
+    return monthFormat[dayjsInstance.month()]
+  }
+  return monthStandalone[dayjsInstance.month()]
+}
+months.s = monthStandalone
+months.f = monthFormat
 
-dayjs.locale({
+const monthsShort = (dayjsInstance, format) => {
+  if (MONTHS_IN_FORMAT.test(format)) {
+    return monthShortFormat[dayjsInstance.month()]
+  }
+  return monthShortStandalone[dayjsInstance.month()]
+}
+monthsShort.s = monthShortStandalone
+monthsShort.f = monthShortFormat
+
+const locale = {
   name: 'ru',
-  weekdays: 'воскресенье_понедельник_вторник_среда_четверг_пятница_суббота'.split('_'),
-  weekdaysShort: 'вск_пнд_втр_срд_чтв_птн_сбт'.split('_'),
-  weekdaysMin: 'вс_пн_вт_ср_чт_пт_сб'.split('_'),
-  months: 'Январь_Февраль_Март_Апрель_Май_Июнь_Июль_Август_Сентябрь_Октябрь_Ноябрь_Декабрь'.split('_'),
-  monthsShort: 'Янв_Фев_Мар_Апр_Май_Июн_Июл_Авг_Сен_Окт_Ноя_Дек'.split('_'),
+  weekdays: 'Воскресенье_Понедельник_Вторник_Среда_Четверг_Пятница_Суббота'.split('_'),
+  weekdaysShort: 'Вск_Пнд_Втр_Срд_Чтв_Птн_Сбт'.split('_'),
+  weekdaysMin: 'Вс_Пн_Вт_Ср_Чт_Пт_Сб'.split('_'),
+  months,
+  monthsShort,
   weekStart: 1,
   formats: {
     LT: 'H:mm',
@@ -51,5 +75,7 @@ dayjs.locale({
     y: 'год',
     yy: relativeTimeWithPlural
   },
-  ordinal: n => `${n}.`
-})
+  ordinal: n => n
+}
+
+dayjs.locale(locale, null, false)
