@@ -2,7 +2,7 @@
   "name": "marketplace/flarum-l10n-core-russian",
   "description": "Flarum Russian language pack.",
   "type": "flarum-extension",
-  "license": "GPL-3.0-or-later",
+  "license": "MIT",
   "homepage": "https://github.com/marketplace-flarum",
   "keywords": [
     "extension",
