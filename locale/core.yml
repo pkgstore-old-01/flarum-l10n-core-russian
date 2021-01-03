@@ -45,8 +45,8 @@ core:
       home_page_text: "Выберите страницу, которую пользователи будут видеть при посещении форума. При вводе пользовательских значений, используйте путь относительно корня форума."
       saved_message: "Изменения сохранены."
       show_language_selector_label: "Отображать переключатель языка"
-      slug_driver_heading: "Slug Driver: {model}"
-      slug_driver_text: "Select a driver to be used for slugging this model."
+      slug_driver_heading: "Драйвер путей: {model}"
+      slug_driver_text: "Выберите драйвер, который будет использоваться для создания семантических путей (URL)."
       submit_button: => core.ref.save_changes
       title: "Основные"
       welcome_banner_heading: "Баннер приветствия"
