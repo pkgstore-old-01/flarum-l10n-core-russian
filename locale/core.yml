@@ -153,13 +153,13 @@ core:
       basics_title: => core.admin.basics.description
       categories:
         authentication: "Аутентификация"
-        core: "Основная конфигурация"
-        discussion: "Обсуждение"
+        core: "Основные настройки"
+        discussion: "Дискуссия"
         feature: "Особенности"
         formatting: "Форматирование"
         language: "Языки"
-        moderation: "На модерации"
-        other: "Остальные расширения"
+        moderation: "Модерация"
+        other: "Другие расширения"
         theme: "Темы"
       dashboard_button: => core.admin.dashboard.title
       dashboard_title: => core.admin.dashboard.description
