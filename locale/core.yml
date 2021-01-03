@@ -48,7 +48,7 @@ core:
       slug_driver_heading: "Slug Driver: {model}"
       slug_driver_text: "Select a driver to be used for slugging this model."
       submit_button: => core.ref.save_changes
-      title: "Основные настройки"
+      title: "Основные"
       welcome_banner_heading: "Баннер приветствия"
       welcome_banner_text: "Введите текст, который будет отображаться на всех страницах форума. Используйте этот элемент для того, чтобы приветствовать гостей форума."
 
@@ -153,7 +153,7 @@ core:
       basics_title: => core.admin.basics.description
       categories:
         authentication: "Аутентификация"
-        core: "Основные настройки"
+        core: "Настройки форума"
         discussion: "Дискуссия"
         feature: "Особенности"
         formatting: "Форматирование"
