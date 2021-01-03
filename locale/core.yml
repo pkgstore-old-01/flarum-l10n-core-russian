@@ -232,8 +232,8 @@ core:
 
     # These translations are used in the Change Password modal dialog.
     change_password:
-      send_button: "Отправить пароль на E-mail"
-      text: "Нажмите на кнопку ниже для отправки ссылки изменения пароля на Ваш E-mail."
+      send_button: "Отправить пароль на e-mail"
+      text: "Нажмите на кнопку ниже для отправки ссылки изменения пароля на Ваш e-mail."
       title: => core.ref.change_password
 
     # These translations are used by the composer controls.
@@ -309,7 +309,7 @@ core:
       email_sent_message: "Мы отправили Вам письмо, содержащее ссылку для восстановления пароля. Проверьте папку со спамом, если Вы не получили письмо в течение нескольких минут."
       not_found_message: "Зарегистрированные пользователи с указанным e-mail отсутствуют."
       submit_button: "Восстановить пароль"
-      text: "Введите свой E-mail, и мы вышлем Вам ссылку для сброса пароля."
+      text: "Введите свой e-mail, и мы вышлем Вам ссылку для сброса пароля."
       title: "Забыли пароль"
 
     # These translations are used in the header and session dropdown menu.
@@ -444,7 +444,7 @@ core:
     user_controls:
       button: "Управление"
       delete_button: => core.ref.delete
-      delete_confirmation: "Вы уверены, что хотите удалить пользователя? Все сообщения пользователя также будут удалены."
+      delete_confirmation: "Вы уверены, что хотите удалить пользователя? Сообщения пользователя НЕ будут удалены."
       delete_error_message: "Не удалось удалить пользователя <i>{username} ({email})</i>"
       delete_success_message: "Пользователь <i>{username} ({email})</i> удалён"
       edit_button: => core.ref.edit
@@ -452,7 +452,7 @@ core:
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
     user_email_confirmation:
       alert_message: => core.ref.confirmation_email_sent
-      resend_button: "Повторно отправить подтверждение по E-mail"
+      resend_button: "Повторно отправить подтверждение по e-mail"
       sent_message: "Отправлено"
 
   # Translations in this namespace are used by the forum and admin interfaces.
