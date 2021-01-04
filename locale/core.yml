@@ -578,7 +578,7 @@ core:
 
     # These translations are used when testing mailing configuration
     send_test:
-      subject: Проверка электронной почты Flarum
+      subject: "Проверка электронной почты Flarum"
       body: |
         Привет, {username}!
 
