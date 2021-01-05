@@ -154,7 +154,7 @@ core:
       categories:
         authentication: "Аутентификация"
         core: "Настройки форума"
-        discussion: "Дискуссия"
+        discussion: "Общение"
         feature: "Особенности"
         formatting: "Форматирование"
         language: "Языки"
