@@ -605,7 +605,7 @@ core:
     custom_header_text: "Специальный HTML, который будет отображаться в самой верхней части страницы, над заголовком Flarum."
     custom_header_title: "Редактирование верхнего колонтитула"
     delete: "Удалить"
-    delete_forever: "Удалить навсегда"
+    delete_forever: "Удалить (навсегда)"
     discussions: "Дискуссии"                     # Referenced by flarum-statistics.yml
     edit: "Править"
     email: "E-mail"
