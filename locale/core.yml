@@ -597,7 +597,7 @@ core:
     all_discussions: "Все дискуссии"
     change_email: "Изменить e-mail"
     change_password: "Изменить пароль"
-    color: "Цвет"                                # Referenced by flarum-tags.yml
+    color: "Цвет"                                   # Referenced by flarum-tags.yml
     confirm_password: "Подтвердить пароль"
     confirmation_email_sent: "Мы отправили письмо с подтверждением на адрес {email}. Если Вы не получите письмо в ближайшее время, проверьте папку со спамом."
     custom_footer_text: "Специальный HTML, который будет отображаться в самой нижней части страницы."
@@ -606,7 +606,7 @@ core:
     custom_header_title: "Редактирование верхнего колонтитула"
     delete: "Удалить"
     delete_forever: "Удалить (навсегда)"
-    discussions: "Дискуссии"                     # Referenced by flarum-statistics.yml
+    discussions: "Дискуссии"                        # Referenced by flarum-statistics.yml
     edit: "Править"
     email: "E-mail"
     icon: "Иконка"
@@ -617,25 +617,25 @@ core:
     mark_all_as_read: "Отметить всё как прочитанное"
     next_page: "Следующая страница"
     notifications: "Уведомления"
-    okay: "ОК"                                   # Referenced by flarum-tags.yml
+    okay: "ОК"                                      # Referenced by flarum-tags.yml
     password: "Пароль"
-    posts: "Сообщения"                           # Referenced by flarum-statistics.yml
+    posts: "Сообщения"                              # Referenced by flarum-statistics.yml
     previous_page: "Предыдущая страница"
     remove: "Удалить"
     rename: "Переименовать"
-    reply: "Ответить"                            # Referenced by flarum-mentions.yml
+    reply: "Ответить"                               # Referenced by flarum-mentions.yml
     reset_your_password: "Сбросить пароль"
     restore: "Восстановить"
-    save_changes: "Сохранить"                    # Referenced by flarum-suspend.yml, flarum-tags.yml
+    save_changes: "Сохранить"                       # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: "Настройки"
     sign_up: "Регистрация"
-    some_others: "{count} другому|{count} другим"  # Referenced by flarum-likes.yml, flarum-mentions.yml
+    some_others: "{count} другому|{count} другим"   # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: "Создать дискуссию"
     username: "Имя пользователя"
-    users: "Пользователи"                         # Referenced by flarum-statistics.yml
+    users: "Пользователи"                           # Referenced by flarum-statistics.yml
     view: "Посмотреть"
     write_a_reply: "Написать ответ..."
-    you: "Вам"                                    # Referenced by flarum-likes.yml, flarum-mentions.yml
+    you: "Вам"                                      # Referenced by flarum-likes.yml, flarum-mentions.yml
 
   ##
   # GROUP NAMES - These keys are translated at the back end.
