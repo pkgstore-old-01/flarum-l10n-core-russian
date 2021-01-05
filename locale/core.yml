@@ -298,7 +298,7 @@ core:
       password_label: => core.ref.password
       set_password_label: "Установить новый пароль"
       submit_button: => core.ref.save_changes
-      title: "Изменить пользователя"
+      title: "Изменение пользователя"
       username_heading: => core.ref.username
       username_label: => core.ref.username
 
