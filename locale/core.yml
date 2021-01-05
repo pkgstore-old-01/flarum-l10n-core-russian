@@ -133,7 +133,7 @@ core:
       no_settings: "Расширение не имеет настроек."
       open_modal: "Открыть настройки"
       permissions_title: "Разрешения"
-      saved_message: "Ваши изменения сохранены."
+      saved_message: "Изменения сохранены."
       uninstall_button: "Удалить"
 
     # These translations are used in the secondary header.
