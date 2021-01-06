@@ -23,7 +23,7 @@ core:
       edit_css_button: "Редактировать CSS"
       edit_footer_button: => core.ref.custom_footer_title
       edit_header_button: => core.ref.custom_header_title
-      enter_hex_message: "Пожалуйста, введите код цвета в HEX-формате."
+      enter_hex_message: "Пожалуйста, введите код цвета в формате HEX."
       favicon_heading: "Favicon"
       favicon_text: "Загрузите изображение, которое будет отображаться в качестве значка форума."
       logo_heading: "Логотип"
@@ -35,7 +35,7 @@ core:
     basics:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: "Язык по умолчанию"
-      description: "Настройка название форума, локализации и других основных параметров."
+      description: "Настройка названия форума, локализации и других основных параметров."
       display_name_heading: "Отображаемое имя пользователя"
       display_name_text: "Выберите драйвер, который должен использоваться для отображаемых имён пользователей. По умолчанию, используется username."
       forum_description_heading: "Описание форума"
