@@ -75,7 +75,7 @@ core:
     edit_group:
       color_label: => core.ref.color
       delete_button: "Удалить группу"
-      delete_confirmation: "Вы уверены, что хотите удалить группу? Пользователи, находящиеся в этой группе, не будут удалены."
+      delete_confirmation: "Вы уверены, что хотите удалить группу? Пользователи в этой группе НЕ будут удалены."
       hide_label: "Скрыть на форуме"
       icon_label: => core.ref.icon
       icon_text: => core.ref.icon_text
@@ -94,7 +94,7 @@ core:
     # These translations are used in the email page of the admin interface.
     email:
       addresses_heading: "Адреса"
-      description: "Настройка драйвера, параметров и адресов, которые будет использовать Ваш форум для отправки e-mail."
+      description: "Настройка драйвера, параметров и адресов, которые будут использоваться на Вашем форуме для отправки e-mail."
       driver_heading: "Выберите драйвер"
       driver_label: "Драйвер"
       from_label: "Отправитель"
@@ -171,7 +171,7 @@ core:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_post_editing_label: "Разрешить править сообщение"
+      allow_post_editing_label: "Разрешить изменять сообщение"
       allow_renaming_label: "Разрешить переименование"
       create_heading: "Создание"
       delete_discussions_forever_label: "Удалять дискуссии (навсегда)"
@@ -179,8 +179,8 @@ core:
       delete_posts_forever_label: "Удалять сообщения (навсегда)"
       delete_posts_label: "Удалять сообщения"
       description: "Настройки прав доступа."
-      edit_posts_label: "Править сообщения"
-      edit_users_label: "Править пользователей"
+      edit_posts_label: "Редактировать сообщения"
+      edit_users_label: "Редактировать пользователей"
       global_heading: "Глобальные"
       moderate_heading: "Модерация"
       new_group_button: "Новая группа"
@@ -282,7 +282,7 @@ core:
 
     # These translations are used in the discussion list.
     discussion_list:
-      empty_text: "Дискуссии отсутствуют."
+      empty_text: "Кажется, здесь нет дискуссий."
       load_more_button: => core.ref.load_more
       mark_as_read_tooltip: "Отметить как прочитанное"
       replied_text: "{username} ответил(а) {ago}"
@@ -307,7 +307,7 @@ core:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
       email_sent_message: "Мы отправили Вам письмо, содержащее ссылку для восстановления пароля. Проверьте папку со спамом, если Вы не получили письмо в течение нескольких минут."
-      not_found_message: "Зарегистрированные пользователи с указанным e-mail отсутствуют."
+      not_found_message: "Пользователи с указанным e-mail не найдены."
       submit_button: "Восстановить пароль"
       text: "Введите свой e-mail, и мы вышлем Вам ссылку для сброса пароля."
       title: "Забыли пароль"
@@ -335,11 +335,11 @@ core:
 
     # These translations are used by the sorting control above the discussion list.
     index_sort:
-      latest_button: "Последние"
-      newest_button: "Новые"
-      oldest_button: "Старые"
+      latest_button: "По обновлению"
+      newest_button: "Новое"
+      oldest_button: "Старое"
       relevance_button: "По релевантности"
-      top_button: "Популярные"
+      top_button: "Популярное"
 
     # These translations are used in the Log In modal dialog.
     log_in:
@@ -347,7 +347,7 @@ core:
       invalid_login_message: "Ваши данные для входа некорректны."
       password_placeholder: => core.ref.password
       remember_me_label: "Запомнить меня"
-      sign_up_text: "Нет аккаунта? <a>Регистрация</a>"
+      sign_up_text: "У Вас нет аккаунта? <a>Регистрация</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
       username_or_email_placeholder: "Имя пользователя или e-mail"
@@ -381,7 +381,7 @@ core:
       now_link: "Сейчас"
       original_post_link: "Начало"
       unread_text: "{count} не прочитано"
-      viewing_text: "{index} из {count} сообщений|{index} из {count} сообщений"
+      viewing_text: "{index} из {count} сообщение|{index} из {count} сообщений"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
@@ -419,7 +419,7 @@ core:
     sign_up:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
-      log_in_text: "Уже зарегистрированы? <a>Войти</a>"
+      log_in_text: "Вы уже зарегистрированы? <a>Войти</a>"
       password_placeholder: => core.ref.password
       submit_button: => core.ref.sign_up
       title: => core.ref.sign_up
@@ -432,10 +432,10 @@ core:
       avatar_upload_button: "Изменить"
       avatar_upload_tooltip: "Загрузить новый аватар"
       discussions_link: => core.ref.discussions
-      in_discussion_text: 'в "{discussion}"'
+      in_discussion_text: 'В "{discussion}"'
       joined_date_text: "Регистрация: {ago}"
       online_text: "В сети"
-      posts_empty_text: "Сообщения отсутствуют."
+      posts_empty_text: "Кажется, здесь нет сообщений."
       posts_link: => core.ref.posts
       posts_load_more_button: => core.ref.load_more
       settings_link: => core.ref.settings
@@ -492,7 +492,7 @@ core:
     # Translations in this namespace are displayed by the basic HTML content loader.
     content:
       javascript_disabled_message: "Этот сайт лучше всего просматривать в современном браузере с включённым JavaScript."
-      load_error_message: "Что-то пошло не так при попытке загрузки полной версии этого сайта."
+      load_error_message: "Что-то пошло не так при попытке загрузить полную версию этого сайта. Попробуйте обновить страницу с удалением кэша браузера (CTRL+F5) для решения этой проблемы."
       loading_text: "Загрузка..."
 
     # Translations in this namespace are displayed in the basic HTML discussion view.
