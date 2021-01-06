@@ -125,9 +125,9 @@ core:
       info_links:
         discuss: "Обсуждение"
         documentation: "Документация"
-        donate: "Пожертвовать"
+        donate: "Поддержать"
         source: "Исходный код"
-        support: "Поддержка"
+        support: "Помощь"
         website: "Сайт"
       no_permissions: "Расширение не имеет разрешений."
       no_settings: "Расширение не имеет настроек."
