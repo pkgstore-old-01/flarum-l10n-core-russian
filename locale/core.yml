@@ -36,7 +36,7 @@ core:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: "Язык по умолчанию"
       description: "Настройка названия форума, локализации и других основных параметров."
-      display_name_heading: "Отображаемое имя пользователя"
+      display_name_heading: "Отображаемое имя"
       display_name_text: "Выберите драйвер, который должен использоваться для отображаемых имён пользователей. По умолчанию, используется username."
       forum_description_heading: "Описание форума"
       forum_description_text: "Введите краткое описание сообщества. Описание появится в одноимённом meta-теге и будет отображаться в поисковых системах."
@@ -44,7 +44,7 @@ core:
       home_page_heading: "Главная страница"
       home_page_text: "Выберите страницу, которую пользователи будут видеть первой при посещении форума."
       saved_message: "Изменения сохранены."
-      show_language_selector_label: "Отображать переключатель языка"
+      show_language_selector_label: "Показывать переключатель языка"
       slug_driver_heading: "Драйвер путей: {model}"
       slug_driver_text: "Выберите драйвер, который будет использоваться при создании семантических путей (URL) для этой модели."
       submit_button: => core.ref.save_changes
@@ -80,8 +80,8 @@ core:
       icon_label: => core.ref.icon
       icon_text: => core.ref.icon_text
       name_label: "Название"
-      plural_placeholder: "Множественное число (т.е. Модеры)"
-      singular_placeholder: "Единственное число (т.е. Модер)"
+      plural_placeholder: "Множественное число"
+      singular_placeholder: "Единственное число"
       submit_button: => core.ref.save_changes
       title: "Создание группы"
 
@@ -121,7 +121,7 @@ core:
       confirm_uninstall: "При удалении будут удалены все записи базы данных и ресурсы, связанные с расширением. Вы уверены, что хотите продолжить?"
       disabled: "Отключено"
       enabled: "Включено"
-      enable_to_see: "Включите расширение для отображения и изменения настроек."
+      enable_to_see: "Включите расширение для отображения и изменения его настроек."
       info_links:
         discuss: "Обсуждение"
         documentation: "Документация"
@@ -411,7 +411,7 @@ core:
       notify_by_email_heading: => core.ref.email
       notify_by_web_heading: "Web"
       notify_discussion_renamed_label: "Переименование моей дискуссии"
-      privacy_disclose_online_label: "Отображать мой статус online"
+      privacy_disclose_online_label: "Показывать мой статус online"
       privacy_heading: "Конфиденциальность"
       title: => core.ref.settings
 
@@ -600,9 +600,9 @@ core:
     color: "Цвет"                                   # Referenced by flarum-tags.yml
     confirm_password: "Подтвердить пароль"
     confirmation_email_sent: "Мы отправили письмо с подтверждением на адрес {email}. Если Вы не получите письмо в ближайшее время, проверьте папку со спамом."
-    custom_footer_text: "Специальный HTML, который будет отображаться в самой нижней части страницы."
+    custom_footer_text: "HTML, который будет отображаться в самой нижней части страницы."
     custom_footer_title: "Редактирование нижнего колонтитула"
-    custom_header_text: "Специальный HTML, который будет отображаться в самой верхней части страницы, над заголовком Flarum."
+    custom_header_text: "HTML, который будет отображаться в самой верхней части страницы, над заголовком Flarum."
     custom_header_title: "Редактирование верхнего колонтитула"
     delete: "Удалить"
     delete_forever: "Удалить (навсегда)"
