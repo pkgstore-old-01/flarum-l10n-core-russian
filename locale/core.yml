@@ -232,7 +232,7 @@ core:
 
     # These translations are used in the Change Password modal dialog.
     change_password:
-      send_button: "Отправить пароль на e-mail"
+      send_button: "Отправить пароль"
       text: "Нажмите на кнопку ниже для отправки ссылки изменения пароля на Ваш e-mail."
       title: => core.ref.change_password
 
