@@ -76,7 +76,7 @@ core:
       color_label: => core.ref.color
       delete_button: "Удалить группу"
       delete_confirmation: "Вы уверены, что хотите удалить группу? Пользователи в этой группе НЕ будут удалены."
-      hide_label: "Скрыть на форуме"
+      hide_label: "Скрытая группа"
       icon_label: => core.ref.icon
       icon_text: => core.ref.icon_text
       name_label: "Название"
