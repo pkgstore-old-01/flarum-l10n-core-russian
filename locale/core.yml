@@ -178,7 +178,7 @@ core:
       delete_discussions_label: "Удалять дискуссии"
       delete_posts_forever_label: "Удалять сообщения (навсегда)"
       delete_posts_label: "Удалять сообщения"
-      description: "Настройки прав доступа."
+      description: "Настройка прав доступа к различным местам и функциям форума."
       edit_posts_label: "Редактировать сообщения"
       edit_users_label: "Редактировать пользователей"
       global_heading: "Глобальные"
