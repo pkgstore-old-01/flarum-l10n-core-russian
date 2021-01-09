@@ -56,7 +56,7 @@ flarum-subscriptions:
       body: |
         Привет, {recipient_display_name}!
 
-        {poster_display_name} опубликовал новое сообщение в дискуссии: {title}.
+        {poster_display_name} ответил(а) в дискуссии: {title}.
 
         Чтобы посмотреть новое сообщение, перейдите по следующей ссылке:
         {url}
