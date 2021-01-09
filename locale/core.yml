@@ -250,7 +250,7 @@ core:
       discard_confirmation: "Вы не создали дискуссию. Вы хотите отменить дискуссию?"
       submit_button: "Создать"
       title: => core.ref.start_a_discussion
-      title_placeholder: "Название дискуссии"
+      title_placeholder: "Название дискуссии..."
 
     # These translations are used by the composer when editing a post.
     composer_edit:
