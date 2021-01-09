@@ -381,7 +381,7 @@ core:
       now_link: "Сейчас"
       original_post_link: "Начало"
       unread_text: "{count} не прочитано"
-      viewing_text: "{index} из {count} сообщение|{index} из {count} сообщений"
+      viewing_text: "{index} из {count} сообщения|{index} из {count} сообщений"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
