@@ -394,7 +394,7 @@ core:
     # These translations are used by the rename discussion modal.
     rename_discussion:
       submit_button: => core.ref.rename
-      title: "Переименовать дискуссию"
+      title: "Изменение названия"
 
     # These translations are used by the search results dropdown list.
     search:
