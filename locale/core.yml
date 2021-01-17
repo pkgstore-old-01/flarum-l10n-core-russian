@@ -635,7 +635,7 @@ core:
     users: "Пользователи"                           # Referenced by flarum-statistics.yml
     view: "Посмотреть"
     write_a_reply: "Написать ответ..."
-    you: "Вам"                                      # Referenced by flarum-likes.yml, flarum-mentions.yml
+    you: "Вы"                                       # Referenced by flarum-likes.yml, flarum-mentions.yml
 
   ##
   # GROUP NAMES - These keys are translated at the back end.
