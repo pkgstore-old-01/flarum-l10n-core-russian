@@ -10,7 +10,7 @@
 
 Убедитесь, что **Composer** установлен на вашем компьютере, и введите следующую команду в терминале, находясь в корневой директории **Flarum**:
 
-```
+```shell
 composer require marketplace/flarum-l10n-core-russian
 ```
 
@@ -22,7 +22,7 @@ composer require marketplace/flarum-l10n-core-russian
 
 Для обновления локализации необходимо выполнить следующие команды:
 
-```
+```shell
 composer update marketplace/flarum-l10n-core-russian
 php flarum cache:clear
 ```
@@ -31,7 +31,7 @@ php flarum cache:clear
 
 Для удаления локализации необходимо выполнить следующие команды:
 
-```
+```shell
 composer remove marketplace/flarum-l10n-core-russian
 php flarum cache:clear
 ```
