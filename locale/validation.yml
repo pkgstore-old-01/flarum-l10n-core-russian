@@ -69,6 +69,7 @@ validation:
     file: "Файл :attribute не может быть меньше :min килобайт."
     string: "Строка :attribute не может содержать меньше :min символов."
     array: "Массив :attribute не может содержать менее :min элементов."
+  multiple_of: "Значение :attribute должно быть кратно :value."
   not_in: "Выбранное значение для :attribute некорректно."
   not_regex: "Формат :attribute некорректен."
   numeric: "Значение :attribute должно быть числом."
@@ -82,6 +83,9 @@ validation:
   required_with_all: ":attribute обязательно к заполнению, когда имеются значения :values."
   required_without: ":attribute обязательно к заполнению, когда отсутствуют значения :values."
   required_without_all: ":attribute обязательно к заполнению, когда отсутствуют все значения :values."
+  prohibited: ":attribute запрещено."
+  prohibited_if: ":attribute запрещено, когда :other имеет значение :value."
+  prohibited_unless: ":attribute запрещено, если :other не имеет значение :values."
   same: "Значения :attribute и :other должны совпадать."
   size:
     numeric: "Значение :attribute должно быть равным :size."

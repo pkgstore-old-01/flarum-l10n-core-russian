@@ -66,8 +66,8 @@ flarum-tags:
 
     # These translations are used by the Choose Tags modal dialog.
     choose_tags:
-      choose_primary_placeholder: "Укажите основной тег|Укажите {count} основных тегов"
-      choose_secondary_placeholder: "Укажите больше 1 тега|Укажите больше {count} тегов"
+      choose_primary_placeholder: "{count, plural, one {Укажите основной тег} other {Укажите # основных тегов}}"
+      choose_secondary_placeholder: "{count, plural, one {Укажите больше 1 тега} other {Укажите больше # тегов}}"
       edit_title: "Настройка тегов: {title}"
       submit_button: => core.ref.okay
       title: "Укажите теги для Вашей дискуссии"
@@ -94,7 +94,7 @@ flarum-tags:
       added_and_removed_tags_text: "{username} добавил(а) {tagsAdded} и удалил(а) {tagsRemoved}."
       added_tags_text: "{username} добавил(а) {tagsAdded}."
       removed_tags_text: "{username} удалил(а) {tagsRemoved}."
-      tags_text: "тег {tags}|теги {tags}"
+      tags_text: "{count, plural, one {{tags} тег} other {{tags} теги}}"
 
     # These translations are used when visiting a single tag's discussion list.
     tag:
